@@ -26,15 +26,15 @@ public class MaxCars {
             garage[moment][1] = 0;
             moment++;
         }
-
+// should be 2nd method
         Arrays.sort(garage, (a, b) -> {
             if (a[0] != b[0]) return Integer.compare(a[0], b[0]);
             return Integer.compare(a[1], b[1]);
         });
 
+//should be 3rd method
         int currentCars = 0;
         int maxCars = 0;
-
         for (int i = 0; i < garage.length; i++) {
             if (garage[i][1] == 1) {
                 currentCars++;
